@@ -97,7 +97,8 @@ do the npm install the first time)
 
 4) copy the dist folder from the project into this folder as well.
 
-5) edit the index.html  as follows:
+
+Edit the index.html  as follows:
 
     <html>
         <head>
