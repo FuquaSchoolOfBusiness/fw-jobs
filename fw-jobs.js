@@ -36,10 +36,8 @@ export class FwJobs extends LitElement {
   
   static get properties() {
     return {
-        base: { type: String },
         mode: { type: String },
         list: { type: Object },
-        profile: { type: Object },
         listdraft: { type: Object },
         items: { type: Array },
         job: { type: Object },
@@ -50,26 +48,11 @@ export class FwJobs extends LitElement {
   
   connectedCallback() {
       super.connectedCallback();
-      document.addEventListener("_FW_AUTHENTICATED", this.authenticatedEvent); 
       document.addEventListener(FW_JOB_EDIT, this.handleEditEvent);
       document.addEventListener(FW_JOB_DELETE, this.handleDeleteEvent);
       document.addEventListener(FW_JOB_EDIT_CANCEL, this.handleCancelEvent);
       document.addEventListener(FW_JOB_EDIT_SAVE, this.handleSaveEvent);
       this.fetchList();
-      try { 
-        this.profile = document.querySelector('fw-auth').getData().getProfile(); 
-        if (this.list.admins && this.list.admins.indexOf(this.profile.uid) > -1) {
-          this.role = "admin";
-        }
-      } catch (x) {
-      }
-  }
-  
-  async authenticatedEvent(e) {
-      this.profile = document.querySelector('fw-auth').getData().getProfile();
-      if (this.list.admins && this.list.admins.indexOf(this.profile.uid) > -1) {
-          this.role = "admin";
-      }
   }
   
   getNextId() {
@@ -81,8 +64,7 @@ export class FwJobs extends LitElement {
      return 'F' + (n + 1);
   }
  
-  disconnectedCallback() {
-    document.removeEventListener("_FW_AUTHENTICATED", this.authenticatedEvent); 
+  disconnectedCallback() { 
     document.removeEventListener(FW_JOB_EDIT, this.handleEditEvent);
     document.removeEventListener(FW_JOB_DELETE, this.handleDeleteEvent); 
     document.removeEventListener(FW_JOB_EDIT_CANCEL, this.handleCancelEvent);
@@ -91,24 +73,17 @@ export class FwJobs extends LitElement {
   }
   
   async getJobListingsFromService() {
-    const response = await fetch(`https://site.com/rest/jobs/configuration`);
+    const response = await fetch(`https://go.fuqua.duke.edu/fuqua_link/rest/jobs/demo/configuration`);
     const json = await response.json();
     if (json) {
        this.list = json;
-      try { 
-        this.profile = document.querySelector('fw-auth').getData().getProfile(); 
-        if (this.list.admins && this.list.admins.indexOf(this.profile.uid) > -1) {
-          this.role = "admin";
-        }
-      } catch (x) {
-      }
        this.getJobs();
     } 
   }
   
   // Get all of the job postings.
   async getJobs() {
-    const url = `https://site.com/rest/jobs/postings`;
+    const url = `https://go.fuqua.duke.edu/fuqua_link/rest/jobs/demo/postings`;
     const response = await fetch(url);            
     const json = await response.json();
     if (json) {
@@ -171,15 +146,12 @@ export class FwJobs extends LitElement {
   
   constructor() {
     super();
-    this.base = "";
     this.list = {};
-    this.profile = {};
     this.items = [];
     this.mode = "user"; 
     this.job = {};
     this.role = "user";
     this.users = [];
-    this.authenticatedEvent = this.authenticatedEvent.bind(this);
     this.handleEditEvent = this.handleEditEvent.bind(this);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
     this.handleCancelEvent = this.handleCancelEvent.bind(this);
@@ -202,7 +174,7 @@ export class FwJobs extends LitElement {
         if (payload.new) delete payload.new;
     	payload.modified = new Date().toISOString();
 	try {
-            const response = await fetch(`https://site.com/rest/jobs/postings/update`, {
+            const response = await fetch(`https://go.fuqua.duke.edu/fuqua_link/rest/jobs/demo/postings`, {
       		method: 'post',
       		mode: 'cors',
       		cache: 'no-cache',
@@ -241,7 +213,11 @@ export class FwJobs extends LitElement {
                         //    not really established.   This data has the introduction text, the list of skills and the 
                         //    list of programs and other configuration data which you can see in the reference documentation
                         //    for the project in GitHub.
-    			const response = await fetch(`https://site.com/rest/jobs/postings`, {
+                        //
+                        //    In this demo instance, it is the same URL as the Job Postings update end point
+                        //    because in CouchDB, the variable data is in the document and we don't need two
+                        //    different end points.
+    			const response = await fetch(`https://go.fuqua.duke.edu/fuqua_link/rest/jobs/demo/postings`, {
       				method: 'post',
       				mode: 'cors',
       				cache: 'no-cache',
@@ -272,7 +248,7 @@ export class FwJobs extends LitElement {
     	let payload = Object.assign({}, e.detail);
 	try {
             // Delete the specific job posting 
-            const response = await fetch(`https://site.com/fuqua_link/rest/jobs/postings`, {
+            const response = await fetch(`https://go.fuqua.duke.edu/fuqua_link/rest/jobs/demo/postings`, {
       		method: 'delete',
       		mode: 'cors',
       		cache: 'no-cache',
@@ -322,7 +298,6 @@ export class FwJobs extends LitElement {
   render() {
 
 	return  html`
-            ${this.profile.dukeid ? html`
             ${this.mode == "edit" ? html`
 
                             <section _editcontent style="margin-top: 20px;">
@@ -391,7 +366,7 @@ export class FwJobs extends LitElement {
                     <fw-job-list .jobs=${this.items} .field_selectors=${this.list.field_selectors} .programs=${this.list.programs} .skills=${this.list.skills}></fw-job-list>
                     `:html``}
                 </main>`}
-            `}`: html``}
+            `}
 `;
 
   }

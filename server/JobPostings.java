@@ -1,24 +1,25 @@
 /**
- * @license
- * Copyright 2020 Fuqua School of Business, Duke University
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+MIT License
+
+Copyright (c) 2020 Fuqua School of Business, Duke University
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
  */
 package edu.duke.fuqua.job_postings;
 
@@ -56,21 +57,21 @@ public class JobPostings {
     private Logger logger = Logger.getLogger("JobPostings");
     
     @GET
-    @Path("configuration")
+    @Path("demo/configuration")
     @Produces("application/json")
     public String getConfiguration(@PathParam("id")String id) throws JSONException, Throwable {
         return this.getConfiguration().toString();
     }
     
     @GET
-    @Path("postings")
+    @Path("demo/postings")
     @Produces("application/json")
     public String getJobPostings(@PathParam("id")String id) throws JSONException, Throwable {
         return this.getJobPostings().toString();
     }
  
     @POST
-    @Path("postings")
+    @Path("demo/postings")
     @Consumes("application/json")
     @Produces("application/json")
     public String saveJobPostings(String content) throws JSONException, Throwable {
@@ -101,7 +102,7 @@ public class JobPostings {
     }
     
     @DELETE
-    @Path("postings")
+    @Path("demo/postings")
     @Consumes("application/json")
     @Produces("application/json")
     public String deleteJobPostings(String content) throws JSONException, Throwable {

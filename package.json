@@ -1,7 +1,7 @@
 {
   "name": "@fuquaschoolofbusiness/fw-jobs",
   "version": "1.0.1",
-  "description": "Webcomponent @fsb/fw-jobs",
+  "description": "Webcomponent @fuquaschoolofbusiness/fw-jobs",
   "license": "MIT",
   "main": "fw-jobs.js",
   "module": "fw-jobs.js",
@@ -11,7 +11,6 @@
     "start:build": "es-dev-server --app-index dist/index.html --open"
   },
   "devDependencies": {
-    "@fuquaschoolofbusiness/fw-auth": "0.0.16",
     "@open-wc/building-rollup": "^0.22.11",
     "es-dev-server": "^1.46.0",
     "rimraf": "^3.0.2",
