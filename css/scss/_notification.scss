@@ -1,0 +1,94 @@
+// Notifications /////////////////////////////////////////////////////
+
+.notification {
+  background-color: #ddd;
+  width: 100%;
+  border-color: #bbb;
+}
+section.notification {
+  top: 3rem;
+  border-bottom: none;
+  display: none;
+  padding: 1rem 0;
+  position: relative;
+  top: -32px;
+}
+.main .notification.full-width:first-child {
+  padding: 1rem 0;
+}
+section.notification.display {
+  display: block;
+}
+.notification {
+  &.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    label {
+      background-color: #d6e9c6;
+      background-color: rgba(0, 0, 0, 0.33);
+    }
+  }
+  &.info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+    label {
+      background-color: #bce8f1;
+      background-color: rgba(0, 0, 0, 0.33);
+    }
+  }
+  &.warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    label {
+      background-color: #faebcc;
+      background-color: rgba(0, 0, 0, 0.33);
+    }
+  }
+  &.danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+    label {
+      background-color: #ebccd1;
+      background-color: rgba(0, 0, 0, 0.33);
+    }
+  }
+}
+.notification div {
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.5rem;
+  line-height: 160%;
+}
+.notification label {
+  background: #999;
+  margin-right: 0.25rem;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+//  border: 1px solid #666;
+  color: #fff;
+  display: inline;
+  font-family: 'Gibson Bold', arial, sans-serif;
+  line-height: 1;
+  padding: 0.2em 0.6em 0.3em;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+  section.notification {
+//    top: 5.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  section.notification {
+//    top: 8rem;
+  }
+}

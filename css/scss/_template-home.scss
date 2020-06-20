@@ -1,0 +1,80 @@
+// FuquaWorld Home Splash ////////////////////////////////////////////
+
+.home-splash {
+  background: url('../images/splash-large.jpg') center no-repeat $color-fuqua-blue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: -7rem;
+  margin-top: -4rem;
+  text-align: center;
+  clear: both;
+  padding: 8rem 1rem;
+}
+.tagline {
+  color: #fff;
+  display: block;
+  font-family: 'Gibson Semibold', arial, sans-serif;
+  font-size: 3.25rem;
+  letter-spacing: 1px;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.home-splash .large-search {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 70%;
+  max-width: 50rem;
+}
+@media (max-width: 800px) {
+  .splash-text {
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+  .home-splash {
+    margin-top: 0;
+  }
+}
+
+// Home Quicklinks
+
+.quicklinks {
+  background: $color-fuqua-blue-dark;
+  width: 100%;
+  margin: 4rem auto;
+  max-width: 1000px;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.quicklinks a {
+  color: $color-riptide-rush;
+  grid-column-end: span 1;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $color-white;
+  }
+}
+
+// Home Feature Link Boxes
+
+.home-feature-link-boxes div {
+  background: $color-white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  padding: 2rem 2rem 1rem 5rem;
+  position: relative;
+}
+.home-feature-link-boxes i {
+  color: $color-sky-blue;
+  font-size: 3rem;
+  position: absolute;
+  left: 0.6rem;
+  top: 1.125rem;
+}
+.home-feature-link-boxes h2 {
+  margin-top: 0;
+}

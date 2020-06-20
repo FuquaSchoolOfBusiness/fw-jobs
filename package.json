@@ -1,0 +1,24 @@
+{
+  "name": "@fsb/fw-jobs",
+  "version": "1.0.1",
+  "description": "Webcomponent @fsb/fw-jobs",
+  "license": "MIT",
+  "main": "fw-jobs.js",
+  "module": "fw-jobs.js",
+  "scripts": {
+    "start": "es-dev-server --hostname localhost.fuqua.duke.edu --app-index index.html --node-resolve --open --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "es-dev-server --app-index dist/index.html --open"
+  },
+  "devDependencies": {
+    "@fsb/fw-auth": "0.0.13",
+    "@open-wc/building-rollup": "^0.22.11",
+    "es-dev-server": "^1.46.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.3.2"
+  },
+  "dependencies": {
+    "@authentic/mwc-tooltip": "^0.9.0",
+    "@material/mwc-dialog": "^0.15.0"
+  }
+}

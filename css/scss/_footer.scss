@@ -1,0 +1,87 @@
+// Footer //////////////////////////////////////////////////
+
+body > footer {
+  background: $color-fuqua-blue;
+  padding: 2rem 2rem 0 2rem;
+  margin-top: 0;
+  color: $color-white;
+  font-family: 'Gibson Light', arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: $color-riptide-rush;
+    text-decoration: none;
+    &:hover {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+  h3 {
+    font-family: 'Gibson Semibold', arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.44444rem;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+footer ul {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  display: block;
+}
+footer p {
+  margin-bottom: 0;
+  color: #6F6F6F;
+}
+ul.masquerade-links {
+  clear: both;
+  padding-top: 1rem;
+}
+.footer-column {
+  grid-column-end: span 3;
+}
+.fuquaLogo {
+    width: 122px;
+    height: 122px;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    border: 0.11111rem solid $color-white;
+}
+
+.copyright {
+  background: $color-fuqua-blue-dark;
+  margin: 3rem -2rem -1rem -2rem;
+  padding-bottom: 2rem;
+}
+.copyright span {
+  font-family: 'Gibson Light', arial, sans-serif;
+  font-size: 0.75rem;
+}
+.copyright .container {
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+  footer ul {
+    margin: 0 0 2rem 0;
+  }
+  footer .right {
+    text-align: left;
+  }
+}

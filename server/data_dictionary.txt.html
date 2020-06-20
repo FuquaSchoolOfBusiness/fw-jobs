@@ -1,0 +1,97 @@
+
+configuration.json 
+=========================
+
+This document represents the configuration file pulled back from the server for the application.
+It stores configuration data for the instance of the application.  This implementation currently 
+only support a single configuration, but it would be quite simple to allow for multiple configurations
+such as in a multi-tenet scenario.
+
+Items in this document:
+
+"skills" is an array of strings representing possible skills to assign to a job posting.  It is 
+managed in the application administrative interface.
+
+"list_intro" is the rich text (HTML) for the introduction to the job posting page shown to the job 
+seekers.  It is managed in the application administrative interface.
+
+"programs" is an array of string representing possible program alignments to assign to a job posting.
+It is managed in the application administrative interface.
+
+"field_selectors" is an array of field names that can be hidden in the job seeker interface.  This list 
+is NOT managed in the application administrative interface but the data MUST appear in this document 
+or it will affect those options.  Removing the values will eliminate that field from being an option and 
+emptying the array will eliminate the entire option form showing.
+
+"admins" is an array of strings that are user identifiers matching administrators of the application.
+This list is NOT managed in the application administrative interface but the data MUST appear in this
+document or it will affect the application (the array can be empty).   The administrative interface 
+will only show for users with an identity that is listed.
+
+"_rev" is a CouchDB field representing the version of the document.  It is system generated, and
+does not need to be present if the document is being generated from another system.  It is not used 
+directly by the application.
+
+"_id" is a CouchDB field representing the identity of the document.  It is system generated, and
+does not need to be present if the document is being generated from another system.  It is not used 
+directly by the application.
+
+
+
+jobs.json
+==========================
+
+All of the fields are managed in the administrative interface except the "_id", "_rev", and "uuid" 
+fields.
+
+"_rev" is a CouchDB field representing the version of the document.  It is system generated, and
+does not need to be present if the document is being generated from another system.  It is not used 
+directly by the application.
+
+"_id" is a CouchDB field representing the identity of the document.  It is system generated, and
+does not need to be present if the document is being generated from another system.  It is not used 
+directly by the application.
+
+"uuid" is a string that is added to each job posting on the server side to provide a unique
+identity for each job posting independent of the storage system.  This is managed completely on the
+save endpoint for job postings and frankly is unnecessary.  It is not used directly by the application
+and was done in the case that an identity for the job posting was necessary for state management.  In
+the front-end this is not necessary but it might be necessary in a back-end that does not automatically
+assign identity.  The added and required "id" field replaced the need for the "uuid".
+
+"overview" is a string field that represent a very brief overview of the job posting and does not 
+support rich text.
+
+"visible" is a boolean field indicating if job seekers can see this job posting.
+
+"apply" is a rich text (HTML) field for instructions on how to apply for the job posting.
+
+"latest_start" is an optional string date field representing the latest date a job applicant would be
+expected to begin work.  It has a format of "2020-06-15".
+
+"earliest_start" is an optional string date field representing the earliest date a job applicant would
+be able to begin work.  It has a format of "2020-06-15".
+    
+"url" is an optional URL for the company offering the job posting.
+
+"priority_due" is an optional string date field indicating the preference for applications received by
+the specified date.  It has a format of "2020-05-25".
+    
+"duration" is an optional string field representing the number of weeks the position is expected
+to run.
+
+"skills" is an array of strings representing the required skills for the position (this options for
+this list are managed in the configuration of the application).
+
+"organization" is the name of the company offering the job posting.
+
+"modified" is a string date field indicating the last time the job posting was updated.  It is an 
+ISO-8601 format as follows: "2020-05-19T19:43:10.006Z".
+
+"details" is a rich text (HTML) field describing the job and other details associated.
+
+"id" is a required string arbitrarily defining an id for the job posting.  In the application it is 
+expected to be a single alphabetical character followed by a number, e.g. "F25"
+
+"programs" is an array of string representing the appropriate degree programs related to the
+job posting.

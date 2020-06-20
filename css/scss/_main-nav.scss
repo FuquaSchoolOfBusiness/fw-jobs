@@ -1,0 +1,508 @@
+
+// Nav Grid /////
+
+
+// Nav ///////////////////////////////////////////////////////
+
+
+// Primary Nav
+
+.primary-nav {
+  margin-top: 0.125rem;
+}
+.primary-nav li {
+  margin-right: 1rem;
+}
+
+// Profile Button
+
+
+
+
+
+
+div.menu-wrap {
+  margin: 0 auto;
+}
+
+.menu {
+  clear: both;
+  .top-level > a {
+    width: 6rem;
+    padding-bottom: 6px;
+    color: #626262;
+    font-family: 'Gibson Regular', arial, sans-serif;
+    line-height: 100%;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    background-size: 122px 708px;
+     &:hover {
+      color: $color-sky-blue;
+    }
+  }
+}
+.menu-wrap.no-sub-menu {
+  height: 80px;
+}
+.sub-menu {
+  padding: 10px;
+  a {
+    line-height: 30px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 821px) {
+  nav {
+
+  }
+  nav {
+    .menu-wrap {
+    }
+    ul {
+      padding: 0;
+    }
+    .container {
+      text-align: center;
+      position: relative;
+    }
+    .menu > li {
+      width: 6rem;
+    }
+    ul.menu {
+
+    }
+
+    .sub-menu-wrap {
+      position: absolute; /* was relative for the child pseudo-elements */
+      /* negative offset = section padding */
+      margin: 0;
+      /* add back section padding value */
+      padding: 0;
+      left: 0;
+      background: $color-sky-blue-dark;
+      top: 110px;
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+    }
+    .sub-menu-wrap:before, .sub-menu-wrap:after {
+      content: "";
+      position: absolute;
+      /* fill vertically */
+      top: 0;
+      bottom: 0;
+      width: 9600px;
+      right: 100%;
+      background: $color-sky-blue-dark;
+    }
+    .sub-menu-wrap:after {
+      width: 9600px;
+      left: 100%;
+      background: $light-blue;
+    }
+
+    .sub-menu {
+      width: auto;
+    }
+    .sub-menu ul {
+      margin-bottom: 1rem;
+      display: inline-block;
+      overflow: auto;
+    }
+    .sub-menu li {
+      float: left;
+      padding-left: 1rem;
+      a {
+        color: #fff;
+        &:hover {
+          color: $color-sky-blue;
+        }
+      }
+    }
+
+  }
+  .parent {
+    height: 140px;
+  }
+  .parent:after {
+    content: '';
+  	width: 0;
+  	height: 0;
+  	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+  	border-bottom: 5px solid $color-sky-blue-dark;
+    float: center;
+    position: relative;
+    top: 10px;
+  }
+}
+
+// Fixed Nav - .wide-fixed applied via main.js
+
+@media (min-width: 821px) {
+
+  .menu-wrap.wide-fixed {
+    width: 100%;
+    max-height: 80px;
+    background: $color-fuqua-blue;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .menu-wrap.wide-fixed a {
+    background: none;
+    height: auto;
+    padding: 0.75rem 0;
+    color: #fff;
+  }
+  .menu-wrap.wide-fixed .menu {
+//    min-height: auto;
+    margin: 0;
+  }
+  .menu-wrap.wide-fixed .parent {
+//    height: 5rem;
+    &:after {
+      top: -20px;
+    }
+  }
+  .menu-wrap.wide-fixed .sub-menu-wrap {
+    top: auto;
+    padding: 5px 0;
+  }
+  .menu-wrap.wide-fixed .sub-menu {
+    padding: 0;
+  }
+}
+
+nav .menu-wrap.wide-fixed.collapsed {
+  max-height: 0;
+}
+
+// End fixed nav
+
+
+.nav-icon-bar {
+  background-color: #F5F5F5;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 2px;
+  width: 18px;
+  line-height: 14px;
+  margin-top: 3px;
+  vertical-align: text-top;
+  &.first {
+    margin-top: 1px;
+  }
+}
+
+nav .menu-wrap {
+  max-height: 3000px;
+  overflow: visible;
+//  transition: all 0.3s ease-in-out 0s;
+}
+nav .menu-wrap.wide-fixed.collapsed {
+  overflow: hidden;
+}
+
+@media (max-width: 1150px) {
+  h1 {
+    line-height: 100%;
+  }
+  nav {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+  }
+  .btn-navbar {
+    display: block;
+  }
+  .menu-wrap.no-sub-menu {
+    height: auto;
+  }
+  .menu-wrap {
+    background: $color-fuqua-blue;
+    width: 100%;
+    padding-left: 1rem;
+    clear: both;
+    position: fixed;
+    z-index: 1;
+    .menu {
+      display: block;
+      margin: 1rem 0;
+      padding-left: 0;
+      a {
+        color: #fff;
+        line-height: 150%;
+        border-bottom: none;
+      }
+      ul {
+        height: auto;
+        top: 0;
+        margin: 0;
+        padding: 0 10px;
+        border: none;
+        box-shadow: none;
+        display: block;
+        position: relative;
+        float: none;
+        z-index: inherit;
+      }
+      li {
+        width: auto;
+        display: block;
+        float: none;
+        a {
+          margin: 0;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        &:hover > a {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  nav .menu-wrap.collapsed {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .menu .top-level > a {
+    background: none;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .menu .align-center,
+  .sub-menu .align-center {
+    text-align: left;
+  }
+  .sub-menu {
+    width: 100%;
+    max-width: 240px;
+    font-weight: normal;
+    overflow: auto;
+    float: left;
+  }
+  .sub-menu .row {
+    background: #e0e3f0;
+  }
+  .sub-menu ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  .sub-menu li {
+    float: none;
+    line-height: 2rem;
+  }
+  .sub-menu a {
+    font-family: 'Gibson Regular', arial, sans-serif;
+    opacity: 0.85;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  nav .menu-wrap div.menu > ul > li > a {
+    height: auto;
+  }
+  nav .menu i {
+    display: none;
+  }
+}
+
+.menu .current-page-item > a {
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+@media (max-width: 510px) {
+  nav {
+    float: none;
+  }
+}
+
+// Fixed Nav
+
+.fixed {
+  position: fixed;
+}
+
+// Combo Menu
+
+nav .combo-menu > li {
+  width: 4.25rem;
+}
+nav .combo-menu > li > a {
+  font-size: 0.8rem;
+}
+nav .combo-menu .parent:after {
+  top: 11px;
+  left: 14px;
+}
+.parent:after {
+  top: 11px;
+  left: 14px;
+}
+.menu i {
+  top: 0;
+  float: left;
+  font-size: 2rem;
+  margin: 0 0 7px 26px;
+}
+.scrolled .menu i {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+// Fuqua Bookmarks ///////////////////////////////////////
+
+#CustomLinks {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.custom-quicklinks-container {
+  top: 3rem;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+.custom-quicklinks {
+  max-width: 15rem;
+  min-width: 10rem;
+  right: 0;
+  background: #fff;
+  padding: 0;
+  margin: -1px 0 0 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.3);
+  float: right;
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+}
+.is-active {
+  visibility: visible;
+}
+.custom-quicklinks a {
+  text-decoration: none;
+}
+.custom-quicklinks ul {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: hidden;
+}
+.custom-quicklinks li {
+  height: 0.9rem;
+  margin: 0.5rem 0;
+  list-style-type: none;
+  &:hover .remove {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  .remove:hover {
+    opacity: 1;
+  }
+}
+.custom-quicklinks:before {
+  content: '';
+  border-bottom: 0.5rem solid #fff;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  right: 1.5rem;
+  margin-top: -0.45rem;
+  background: transparent;
+  position: absolute;
+}
+.meta-quicklinks {
+  border-top: 1px solid #ccc;
+}
+.meta-quicklinks a {
+  color: #777;
+  &:hover {
+    color: #aaa;
+  }
+}
+.custom-quicklinks li > a {
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 0;
+}
+.remove {
+  margin-left: 0.5rem;
+  font-size: 120%;
+}
+.custom-quicklinks .remove {
+  margin-top: -1.2rem;
+  visibility: hidden;
+}
+.custom-quicklinks .remove a {
+  position: relative;
+  z-index: 1;
+}
+.btn.add-quicklink {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem 0.35rem 0.5rem;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1305px) {
+  .custom-quicklinks-container.scrolled .custom-quicklinks {
+    top: 3rem;
+    right: 6rem;
+    position: fixed;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 451px) {
+  .custom-quicklinks-container {
+    top: 5.5rem;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 451px) {
+  .custom-quicklinks-container.scrolled {
+    top: 5.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .custom-quicklinks-container {
+    top: 8.125rem;
+  }
+  .custom-quicklinks {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    left: 0;
+    box-shadow: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    position: relative;
+  }
+  .custom-quicklinks:before {
+    left: 1.5625rem;
+    right: auto;
+  }
+}

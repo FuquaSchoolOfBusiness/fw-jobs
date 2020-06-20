@@ -1,0 +1,85 @@
+// Modal ///////////////////////////////////////////////////
+
+.modal-shade {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1040;
+  opacity: 0.5;
+}
+.fade {
+    transition: opacity 0.15s linear 0s;
+}
+.fw-modals {
+  bottom: 0;
+  left: 0;
+  outline: 0 none;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-content {
+  margin: 30px auto;
+  max-width: 600px;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  outline: 0 none;
+  position: relative;
+}
+.modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.43px;
+    padding: 15px;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-header h4 {
+  margin: 0;
+  clear: none;
+}
+.modal-body {
+    padding: 15px;
+    position: relative;
+}
+.modal-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    text-align: right;
+    overflow: hidden;
+}
+.modal-footer .btn {
+  margin-bottom: 0;
+}
+button.close {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+}
+.close {
+    color: #000;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
+}
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.5;
+}

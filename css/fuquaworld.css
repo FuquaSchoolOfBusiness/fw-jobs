@@ -1,0 +1,5014 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'budicon';
+  src: url("../fonts/budicon.eot?42886572");
+  src: url("../fonts/budicon.eot?42886572#iefix") format("embedded-opentype"), url("../fonts/budicon.woff?42886572") format("woff"), url("../fonts/budicon.ttf?42886572") format("truetype"), url("../fonts/budicon.svg?42886572#budicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'budicon';
+    src: url('../font/budicon.svg?42886572#budicon') format('svg');
+  }
+}
+*/
+/* line 22, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+[class^="bi_"]:before, [class*=" bi_"]:before {
+  font-family: "budicon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* Help */
+/* line 54, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_help:before {
+  content: '\e829';
+}
+
+/* '' */
+/* Course Info & Teaching */
+/* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_course-info:before {
+  content: '\e850';
+}
+
+/* '' */
+/* Research */
+/* line 58, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_research:before {
+  content: '\e883';
+}
+
+/* '' */
+/* Careers */
+/* line 60, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_careers:before {
+  content: '\e894';
+}
+
+/* '' */
+/* Administrative */
+/* line 62, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_administrative:before {
+  content: '\e895';
+}
+
+/* '' */
+/* Academics */
+/* line 64, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_academics:before {
+  content: '\e903';
+}
+
+/* '' */
+/* Campus Resources */
+/* line 66, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_campus-resources:before {
+  content: '\e919';
+}
+
+/* '' */
+/* Student Life */
+/* line 68, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_student-life:before {
+  content: '\e932';
+}
+
+/* '' */
+/* Calendar */
+/* line 70, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_calendar:before {
+  content: '\e99d';
+}
+
+/* '' */
+/* Directory */
+/* line 72, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_budicon.scss */
+.bi_directory:before {
+  content: '\ea16';
+}
+
+/* '' */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+/* line 8, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 19, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+
+/* line 22, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-plus:before {
+  content: "\2b";
+}
+
+/* line 25, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-euro:before,
+.glyphicon-eur:before {
+  content: "\20ac";
+}
+
+/* line 29, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+/* line 32, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+
+/* line 35, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+/* line 38, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+
+/* line 41, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+/* line 44, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+/* line 47, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+/* line 50, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+/* line 53, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+/* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+/* line 59, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+/* line 62, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+/* line 65, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+/* line 68, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+/* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+/* line 74, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+/* line 77, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+/* line 80, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+/* line 83, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+/* line 86, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+/* line 89, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+/* line 92, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+/* line 95, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+/* line 98, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+/* line 101, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+/* line 104, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+/* line 107, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+/* line 110, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+/* line 113, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+/* line 116, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+/* line 119, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+/* line 122, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+/* line 125, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+/* line 128, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+/* line 131, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+/* line 134, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+/* line 137, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+/* line 140, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+/* line 143, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+/* line 146, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+/* line 149, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+/* line 152, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+/* line 155, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+/* line 158, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+/* line 161, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+/* line 164, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+/* line 167, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+/* line 170, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+/* line 173, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+/* line 176, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+/* line 179, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+/* line 182, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+/* line 185, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+/* line 188, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+/* line 191, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+/* line 194, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+/* line 197, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+/* line 200, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+/* line 203, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+/* line 206, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+/* line 209, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+/* line 212, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+/* line 215, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+/* line 218, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+/* line 221, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+/* line 224, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+/* line 227, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+/* line 230, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+/* line 233, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+/* line 236, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+/* line 239, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+/* line 242, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+/* line 245, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+/* line 248, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+/* line 251, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+/* line 254, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+/* line 257, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+/* line 260, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+/* line 263, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+/* line 266, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+/* line 269, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+/* line 272, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+/* line 275, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+/* line 278, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+/* line 281, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+/* line 284, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+/* line 287, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+/* line 290, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+/* line 293, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+/* line 296, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+/* line 299, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+/* line 302, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+/* line 305, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+/* line 308, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+/* line 311, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+/* line 314, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+/* line 317, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+/* line 320, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+/* line 323, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+/* line 326, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+/* line 329, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+/* line 332, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+/* line 335, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+/* line 338, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+/* line 341, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+/* line 344, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+/* line 347, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+/* line 350, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+/* line 353, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+/* line 356, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+/* line 359, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+/* line 362, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+/* line 365, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+/* line 368, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+/* line 371, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+/* line 374, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+/* line 377, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+/* line 380, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+/* line 383, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+/* line 386, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+/* line 389, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+/* line 392, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+/* line 395, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+/* line 398, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+/* line 401, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+/* line 404, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+/* line 407, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+/* line 410, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+/* line 413, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+/* line 416, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+/* line 419, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+/* line 422, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+/* line 425, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+/* line 428, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+/* line 431, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+/* line 434, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+/* line 437, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+/* line 440, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+/* line 443, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+/* line 446, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+/* line 449, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+/* line 452, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+/* line 455, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+/* line 458, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+/* line 461, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+/* line 464, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+/* line 467, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+/* line 470, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+/* line 473, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+/* line 476, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+/* line 479, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+/* line 482, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+/* line 485, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+/* line 488, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+/* line 491, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+/* line 494, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+/* line 497, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+/* line 500, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+/* line 503, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+/* line 506, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+/* line 509, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+/* line 512, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+/* line 515, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+/* line 518, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+/* line 521, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+/* line 524, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+/* line 527, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+/* line 530, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+/* line 533, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+/* line 536, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+/* line 539, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+/* line 542, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+/* line 545, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+/* line 548, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+/* line 551, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+/* line 554, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+/* line 557, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+/* line 560, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+/* line 563, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+/* line 566, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+/* line 569, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+/* line 572, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+/* line 575, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+/* line 578, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+/* line 581, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+/* line 584, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+/* line 587, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+/* line 590, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+/* line 593, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+/* line 596, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+/* line 599, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+/* line 602, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+/* line 605, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+/* line 608, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+/* line 611, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+/* line 614, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+/* line 617, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
+/* line 620, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+/* line 623, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+/* line 626, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+/* line 629, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+/* line 632, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+/* line 635, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+/* line 638, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+/* line 641, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+/* line 644, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+/* line 647, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+/* line 650, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+/* line 653, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+/* line 656, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+/* line 659, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+/* line 662, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+
+/* line 665, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+/* line 668, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+/* line 671, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+/* line 674, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+/* line 677, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+
+/* line 680, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+/* line 683, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+/* line 686, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+/* line 689, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+/* line 692, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+/* line 695, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+/* line 698, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
+/* line 701, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+
+/* line 704, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+
+/* line 707, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+/* line 710, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-rub:before {
+  content: "\20bd";
+}
+
+/* line 713, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+/* line 716, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+/* line 719, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+/* line 722, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+/* line 725, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+/* line 728, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+/* line 731, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+/* line 734, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+/* line 737, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+/* line 740, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+/* line 743, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+/* line 746, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+/* line 749, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+/* line 752, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+/* line 755, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+/* line 758, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+/* line 761, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+/* line 764, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+/* line 767, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+/* line 770, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+/* line 773, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+/* line 776, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+/* line 779, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+/* line 782, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+/* line 785, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+/* line 788, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+/* line 791, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+/* line 794, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+/* line 797, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+/* line 800, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+/* line 803, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_glyphicon.scss */
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
+@font-face {
+  font-family: 'Gibson Light';
+  src: url("../fonts/gibsonlight-regular-webfont.eot");
+  src: url("../fonts/gibsonlight-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gibsonlight-regular-webfont.woff2") format("woff2"), url("../fonts/gibsonlight-regular-webfont.woff") format("woff"), url("../fonts/gibsonlight-regular-webfont.ttf") format("truetype"), url("../fonts/gibsonlight-regular-webfont.svg#gibsonlight-regular-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson Regular';
+  src: url("../fonts/gibson-regular-webfont.eot");
+  src: url("../fonts/gibson-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gibson-regular-webfont.woff2") format("woff2"), url("../fonts/gibson-regular-webfont.woff") format("woff"), url("../fonts/gibson-regular-webfont.ttf") format("truetype"), url("../fonts/gibson-regular-webfont.svg#gibson-regular-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson Semibold';
+  src: url("../fonts/gibson-semibold-webfont.eot");
+  src: url("../fonts/gibson-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gibson-semibold-webfont.woff2") format("woff2"), url("../fonts/gibson-semibold-webfont.woff") format("woff"), url("../fonts/Gibson-SemiBold.ttf") format("truetype"), url("../fonts/gibson-semibold-webfont.svg#gibson-semibold-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson Bold';
+  src: url("../fonts/gibson-bold-webfont.eot");
+  src: url("../fonts/gibson-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gibson-bold-webfont.woff2") format("woff2"), url("../fonts/gibson-bold-webfont.woff") format("woff"), url("../fonts/gibson-bold-webfont.ttf") format("truetype"), url("../fonts/gibson-bold-webfont.svg#gibson-bold-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+strong {
+  font-family: 'Gibson Semibold', arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 7, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+h1.no-menu {
+  margin-top: 2rem;
+}
+
+/* line 10, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 13, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 16, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 19, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 22, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.hidden {
+  left: -10000px;
+  top: auto;
+  float: left;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 31, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.note {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* line 35, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.no-bottom-margin {
+  width: auto;
+  margin-bottom: 0;
+}
+
+/* line 39, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.add-margin-bottom {
+  margin-bottom: 2rem;
+}
+
+/* line 42, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.gibson-regular {
+  font-family: 'Gibson Regular', arial, sans-serif;
+}
+
+/* line 45, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.gibson-bold {
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+/* line 48, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.red-text {
+  color: #ff0000;
+}
+
+/* line 51, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.no-click {
+  cursor: not-allowed;
+}
+
+/* line 54, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.subtitle {
+  font-size: 1.5rem;
+}
+
+/* line 57, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_basic.scss */
+.push-down {
+  margin-top: 2.25rem;
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* line 9, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 17, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+body {
+  background: #00006A;
+  font-family: 'Gibson Light', Arial, sans-serif;
+  font-size: 1.125rem;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  padding-top: 3.5rem;
+}
+
+/* line 25, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gibson Regular', Arial, sans-serif;
+  font-weight: normal;
+  clear: both;
+}
+
+/* line 29, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #009;
+  text-decoration: none;
+}
+
+/* line 34, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h1 {
+  font-size: 2.25rem;
+}
+
+/* line 37, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h2 {
+  font-size: 1.875rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  line-height: 100%;
+}
+
+/* line 44, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+/* line 48, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h4 {
+  font-size: 1.125rem;
+}
+
+/* line 51, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h5 {
+  font-size: 0.875rem;
+}
+
+/* line 54, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h6 {
+  font-size: 0.75rem;
+}
+
+/* line 57, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+main {
+  background: #FFF;
+  padding: 4rem 0;
+}
+
+/* line 61, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+p {
+  font-size: 1.125rem;
+  margin-bottom: 0.625;
+}
+
+/* line 65, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+span,
+p {
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+/* line 70, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+a {
+  color: #009;
+  cursor: pointer;
+}
+
+/* line 73, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+a:hover {
+  color: #005580;
+}
+
+/* line 79, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 85, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 91, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  header h1 a {
+    font-size: 94.5%;
+  }
+}
+
+@media (max-width: 436px) {
+  /* line 97, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  header h1 {
+    font-size: 22px;
+    line-height: 22px;
+    top: 22px;
+  }
+}
+
+/* line 107, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.main {
+  background: #fff;
+  min-height: 400px;
+  padding: 3rem 0 1rem 0;
+}
+
+/* line 112, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+}
+
+/* line 121, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.row {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  clear: both;
+}
+
+/* line 128, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.hm {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 132, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+section {
+  padding-top: 1rem;
+  clear: both;
+}
+
+/* line 136, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.page-content {
+  max-width: 1000px;
+  margin: 1rem auto 0;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 142, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+section.full-width {
+  clear: both;
+}
+
+/* line 144, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+section.full-width > div:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 149, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.full-width.title-only h1 {
+  margin-bottom: 0;
+}
+
+/* line 152, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.main section.full-width:last-of-type {
+  border-bottom: none;
+  padding-bottom: 2rem;
+}
+
+/* line 156, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.main .full-width:first-child {
+  padding-top: 0;
+}
+
+/* line 159, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.header-container h1 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  /* line 163, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  .page-content {
+    margin: 1rem 1rem 0;
+  }
+}
+
+/* line 170, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+/* line 176, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.span {
+  -moz-box-sizing: border-box;
+  display: block;
+  float: left;
+  min-height: 30px;
+  width: 100%;
+}
+
+/* line 183, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.row > .full-width {
+  width: 100%;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+/* line 189, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.offset-one-tenth {
+  margin-left: 10%;
+}
+
+/* line 192, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.offset-one-fifth {
+  margin-left: 20%;
+}
+
+/* line 195, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.offset-one-quarter {
+  margin-left: 25%;
+}
+
+/* line 198, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.offset-three-eighths {
+  margin-left: 37.5%;
+}
+
+/* line 204, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.basic-list {
+  color: #ccc;
+  padding-left: 1.5rem;
+}
+
+/* line 208, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.no-bullets,
+.form-group .no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 217, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.toggle-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+
+/* line 223, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.toggle-list li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+/* line 226, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.toggle-list li.current-page-item a {
+  color: #009;
+}
+
+/* line 230, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.toggle-list a {
+  cursor: pointer;
+  color: #999;
+  text-decoration: none;
+}
+
+/* line 234, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.toggle-list a:hover {
+  color: #3E5BC3;
+}
+
+@media (max-width: 500px) {
+  /* line 240, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  .toggle-list li {
+    margin: 1rem 0;
+    display: block;
+  }
+}
+
+/* line 250, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn {
+  font-family: Gibson,Arial,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .72222em;
+  line-height: 1em;
+  white-space: nowrap;
+  border: 3px solid #978B82;
+  background: transparent;
+  padding: 15px .96154em 12px;
+  display: inline-block;
+  color: #978B82;
+  transition: all 0.05s ease-in-out 0s;
+}
+
+/* line 265, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn:hover, .btn:active, .btn:focus {
+  background: #978B82;
+  color: #FFF;
+  text-shadow: 0 0 1px #ddd;
+}
+
+/* line 272, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn:focus {
+  outline: thin dotted gray;
+  outline-offset: 2px;
+}
+
+/* line 277, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn.primary {
+  background: #A4B312;
+  color: rgba(255, 255, 255, 0.9);
+  border: solid 1px #9ca605;
+}
+
+/* line 281, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn.primary:hover {
+  color: #fff;
+  background: #afba07;
+  border: solid 1px #eaf0a8;
+  text-shadow: 0 0 1px #A4B312;
+}
+
+/* line 288, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn-container {
+  height: 34px;
+  margin-top: 2rem;
+}
+
+/* line 291, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.btn-container .btn {
+  margin: -20px 13px 0 0;
+}
+
+/* line 298, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.secondary-link {
+  margin-top: 1.625rem;
+}
+
+/* line 301, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.read-more {
+  float: right;
+}
+
+/* line 304, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.link-list {
+  font-family: 'Gibson Regular', arial, sans-serif;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 310, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.link-list li {
+  min-height: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* line 314, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.link-list.horizontal li {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* line 320, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.aside-link {
+  margin-left: 1rem;
+}
+
+@media (min-width: 1100px) {
+  /* line 325, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  .link-list.nowrap {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 331, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+  .gray-bar.horizontal label {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
+
+/* line 336, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.current {
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+/* line 341, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.spinner {
+  background: url("../images/ring.svg") no-repeat;
+  width: 4.25rem;
+  height: 4.25rem;
+  display: block;
+  margin: 1rem auto;
+  text-indent: -9999px;
+}
+
+/* line 349, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.spinner-shade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-position-x: 50%;
+  background-position-y: 1rem;
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 359, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout.scss */
+.spinner-container {
+  position: relative;
+}
+
+/* line 4, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.cssgrid .grid {
+  padding-bottom: 1rem;
+}
+
+/* line 7, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  align-content: stretch;
+}
+
+/* line 13, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.one-quarter {
+  grid-column-end: span 3;
+  min-width: 160px;
+}
+
+/* line 17, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.one-third {
+  grid-column-end: span 4;
+}
+
+/* line 20, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.one-half {
+  grid-column-end: span 6;
+}
+
+/* line 23, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.two-thirds {
+  grid-column-end: span 8;
+}
+
+/* line 26, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.three-quarters {
+  grid-column-end: span 9;
+}
+
+/* line 29, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.full-width {
+  grid-column-end: span 12;
+}
+
+/* line 33, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.eight-col-grid {
+  grid-column-end: span 12;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5vw);
+  grid-gap: 1rem;
+  align-content: stretch;
+}
+
+/* line 40, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.eight-col-grid .full-width {
+  grid-column-end: span 8;
+}
+
+/* line 43, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.eight-col-grid .item-one-eighth {
+  grid-column-end: span 1;
+}
+
+@media (max-width: 767px) {
+  /* line 48, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  .container {
+    display: block;
+  }
+  /* line 51, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  .one-quarter,
+  .one-third,
+  .one-half,
+  .two-thirds,
+  .three-quarters,
+  .full-width {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+/* line 63, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  align-content: stretch;
+}
+
+/* line 69, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.grid .one-quarter,
+.grid .one-third,
+.grid .one-half,
+.grid .three-quarters,
+.grid .two-thirds,
+.grid .full-width {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 78, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  .grid .one-quarter,
+  .grid .one-third,
+  .grid .one-half,
+  .grid .three-quarters,
+  .grid .two-thirds,
+  .grid .full-width {
+    margin: 1rem 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 88, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  .grid {
+    display: block;
+  }
+}
+
+/* line 95, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container.article {
+  grid-template-columns: repeat(4, 1fr);
+  align-content: stretch;
+}
+
+/* line 99, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container.article .article-header {
+  grid-column-end: span 4;
+}
+
+/* line 102, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container.article .article-body {
+  grid-column-end: span 3;
+}
+
+/* line 105, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container.article .article-sidebar {
+  grid-column-end: span 1;
+}
+
+/* line 108, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container.article .article-footer {
+  grid-column-end: span 4;
+}
+
+/* line 114, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container h1 {
+  margin: 1.5rem 0 0 0;
+}
+
+/* line 117, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.container .full-width h2,
+h2.full-width {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 122, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  .container .full-width h2,
+  h2.full-width {
+    margin-bottom: 1rem;
+  }
+}
+
+/* line 130, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.highlight-box {
+  background: #ddd none repeat scroll 0 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  padding: 1rem;
+}
+
+/* line 136, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+.highlight-box .secondary-link {
+  margin-top: 0.625rem;
+}
+
+@media print {
+  /* line 143, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_grid.scss */
+  > .container {
+    display: inline;
+  }
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input {
+  text-align: left;
+}
+
+/* line 6, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input[type="text"] {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 2.25rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.05s ease-in-out 0s;
+}
+
+/* line 12, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input[type="text"]:active, input[type="text"]:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: solid 3px #66afe9;
+  border-radius: 0;
+}
+
+/* line 20, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.uploader {
+  width: 100%;
+  padding-right: 0;
+  float: left;
+}
+
+/* line 25, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.uploader input[type="file"] {
+  width: 100%;
+  max-width: 312px;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 31, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.uploader input[type="submit"] {
+  margin-right: 0;
+}
+
+/* line 34, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+select {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+/* line 47, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+label {
+  display: inline-block;
+  font-family: 'Gibson Bold', Arial, sans-serif;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+
+/* line 53, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group {
+  margin-bottom: 1rem;
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 64, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group.no-margin {
+  margin-bottom: 0;
+}
+
+/* line 67, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group a {
+  word-wrap: break-word;
+}
+
+/* line 70, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group ul {
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+/* line 74, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group li {
+  margin-bottom: 0.25rem;
+}
+
+/* line 76, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 80, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-group-vertical > span {
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* line 85, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-control {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+
+/* line 100, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+textarea.form-control {
+  height: auto;
+}
+
+/* line 103, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-control-static {
+  display: block;
+}
+
+/* line 106, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.long {
+  max-width: 400px;
+}
+
+/* line 109, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.medium {
+  max-width: 200px;
+}
+
+/* line 112, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.short {
+  max-width: 100px;
+}
+
+/* line 115, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.form-control:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none;
+}
+
+/* line 120, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.button-container .btn {
+  margin-bottom: 07;
+}
+
+/* line 123, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+.profile-section .horizontal-checkbox {
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+/* line 128, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+/* line 131, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: left;
+}
+
+/* line 134, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input:-ms-input-placeholder {
+  text-align: left;
+}
+
+/* line 137, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: left;
+}
+
+/* line 140, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+input:placeholder {
+  color: #555;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  /* line 147, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-horizontal label,
+  .form-horizontal .form-group > span {
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+  /* line 152, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-horizontal .form-group > span {
+    line-height: inherit;
+  }
+  /* line 155, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-horizontal label {
+    text-align: right;
+  }
+  /* line 158, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-horizontal .form-group {
+    min-height: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 165, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-horizontal .form-group {
+    margin-bottom: 0.25rem;
+  }
+  /* line 168, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .form-group span,
+  .form-group label {
+    padding: 0;
+  }
+  /* line 172, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .one-third,
+  .one-half,
+  .one-quarter,
+  .three-quarters,
+  .one-fifth {
+    width: 100%;
+    clear: both;
+  }
+  /* line 180, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-forms.scss */
+  .profile-section .horizontal-checkbox {
+    display: table;
+    padding: 0.25rem 0 0 0;
+  }
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+table {
+  font-size: 0.9rem;
+}
+
+/* line 6, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+table td {
+  padding: 1rem 0.5rem;
+}
+
+/* line 9, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+table th {
+  padding: 0.5rem 0.2rem;
+}
+
+/* line 12, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 15, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+thead {
+  font-family: 'Gibson Bold', arial, sans-serif;
+  line-height: 120%;
+}
+
+/* line 19, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+th {
+  font-weight: normal;
+}
+
+/* line 22, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+.table-follow {
+  padding: 1rem;
+  position: relative;
+}
+
+/* line 27, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+[ng-click*=".sort"] {
+  cursor: pointer;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media screen and (max-width: 940px) {
+  /* line 40, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive,
+  table.responsive thead,
+  table.responsive tbody,
+  table.responsive th,
+  table.responsive td,
+  table.responsive tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /* line 50, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive tr {
+    border: 1px solid #ccc;
+  }
+  /* line 60, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 35%;
+    text-align: left;
+  }
+  /* line 68, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td {
+    padding-left: 55%;
+  }
+  /* line 72, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 16px;
+    left: 6px;
+    width: 30%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /* Label the data */
+  /* line 85, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:nth-of-type(1):before {
+    content: "Course";
+  }
+  /* line 86, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:nth-of-type(2):before {
+    content: "Instructor";
+  }
+  /* line 87, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:nth-of-type(3):before {
+    content: "Time";
+  }
+  /* line 88, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:nth-of-type(4):before {
+    content: "Room";
+  }
+  /* line 89, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive td:nth-of-type(5):before {
+    content: "Seats";
+  }
+  /* line 92, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(1):before {
+    content: "Term & Program";
+  }
+  /* line 93, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(2):before {
+    content: "Course Number";
+  }
+  /* line 94, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(3):before {
+    content: "Title & Instructor";
+  }
+  /* line 95, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(4):before {
+    content: "Course Avg & SD";
+  }
+  /* line 96, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(5):before {
+    content: "Instructor Avg & SD";
+  }
+  /* line 97, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(6):before {
+    content: "Overall Avg & SD";
+  }
+  /* line 98, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(7):before {
+    content: "Hours Prep Avg & SD";
+  }
+  /* line 99, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-evaluation td:nth-of-type(8):before {
+    content: "Number Responses";
+  }
+  /* line 102, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.roster-basic td:nth-of-type(1):before {
+    content: "Name";
+  }
+  /* line 103, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.roster-basic td:nth-of-type(2):before {
+    content: "Class & Year";
+  }
+  /* line 104, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.roster-basic td:nth-of-type(3):before {
+    content: "Grad Year";
+  }
+  /* line 105, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.roster-basic td:nth-of-type(4):before {
+    content: "Email";
+  }
+  /* line 108, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-archive td:nth-of-type(1):before {
+    content: "Course";
+  }
+  /* line 109, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-archive td:nth-of-type(2):before {
+    content: "Instructor";
+  }
+  /* line 110, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-archive td:nth-of-type(3):before {
+    content: "Start Date";
+  }
+  /* line 111, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-archive td:nth-of-type(4):before {
+    content: "Roster";
+  }
+  /* line 112, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.course-archive td:nth-of-type(5):before {
+    content: "Evaluation";
+  }
+  /* line 115, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.email-list-view td:nth-of-type(1):before {
+    content: "Name";
+  }
+  /* line 116, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.email-list-view td:nth-of-type(2):before {
+    content: "Address";
+  }
+  /* line 117, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.email-list-view td:nth-of-type(3):before {
+    content: "Restrictions";
+  }
+  /* line 118, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.email-list-view td:nth-of-type(4):before {
+    content: "List Contact";
+  }
+  /* line 119, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+  table.responsive.email-list-view td:nth-of-type(5):before {
+    content: "Size";
+  }
+}
+
+/* line 123, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_layout-tables.scss */
+.roster th {
+  text-align: left;
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-shade {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1040;
+  opacity: 0.5;
+}
+
+/* line 13, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.fade {
+  transition: opacity 0.15s linear 0s;
+}
+
+/* line 16, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.fw-modals {
+  bottom: 0;
+  left: 0;
+  outline: 0 none;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 28, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-content {
+  margin: 30px auto;
+  max-width: 600px;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  outline: 0 none;
+  position: relative;
+}
+
+/* line 40, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-header {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.43px;
+  padding: 15px;
+}
+
+/* line 45, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 48, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-header h4 {
+  margin: 0;
+  clear: none;
+}
+
+/* line 52, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-body {
+  padding: 15px;
+  position: relative;
+}
+
+/* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: right;
+  overflow: hidden;
+}
+
+/* line 62, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.modal-footer .btn {
+  margin-bottom: 0;
+}
+
+/* line 65, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+button.close {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.close {
+  color: #000;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* line 80, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_modal.scss */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/* line 2, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+fw-notification div.duke-alert {
+  padding-top: 1rem !important;
+}
+
+/* line 5, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+fw-notification .duke-alert h2 {
+  margin-bottom: 1rem;
+}
+
+/* line 9, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification {
+  background-color: #ddd;
+  width: 100%;
+  border-color: #bbb;
+}
+
+/* line 14, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+section.notification {
+  border-bottom: none;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* line 23, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.main .notification.full-width:first-child {
+  padding: 1rem 0;
+}
+
+/* line 26, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+section.notification.display {
+  display: block;
+}
+
+/* line 30, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.success {
+  background-color: #dff0d8;
+  border-top: 3px solid #d6e9c6;
+  border-bottom: 3px solid #d6e9c6;
+  color: #3c763d;
+}
+
+/* line 35, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.success label {
+  background-color: #d6e9c6;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+/* line 40, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.info {
+  background-color: #d9edf7;
+  border-top: 3px solid #bce8f1;
+  border-bottom: 3px solid #bce8f1;
+  color: #31708f;
+}
+
+/* line 45, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.info label {
+  background-color: #bce8f1;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+/* line 50, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.warning {
+  background-color: #fcf8e3;
+  border-top: 3px solid #faebcc;
+  border-bottom: 3px solid #faebcc;
+  color: #8a6d3b;
+}
+
+/* line 55, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.warning label {
+  background-color: #faebcc;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+/* line 60, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.danger {
+  background-color: #f2dede;
+  border-top: 3px solid #ebccd1;
+  border-bottom: 3px solid #ebccd1;
+  color: #a94442;
+}
+
+/* line 65, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification.danger label {
+  background-color: #ebccd1;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+/* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification div {
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.5rem;
+  line-height: 160%;
+}
+
+/* line 79, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+.notification label {
+  background: #999;
+  margin-right: 0.25rem;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  color: #fff;
+  display: inline;
+  font-family: 'Gibson Bold', arial, sans-serif;
+  line-height: 1;
+  padding: 0.2em 0.6em 0.3em;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* line 94, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_notification.scss */
+a.dismiss {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-left: 2rem;
+  margin-right: -6rem;
+}
+
+@media print {
+  /* line 2, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  body {
+    color: #000;
+    background: #fff;
+  }
+  /* line 6, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  nav,
+  footer,
+  .home-splash,
+  .quicklinks-top-inner .search-container,
+  .quicklinks-top-inner .logo,
+  .quicklinks-top-inner ul {
+    display: none;
+  }
+  /* line 15, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  h1 {
+    font-size: 1.2rem;
+  }
+  /* line 18, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  h2 {
+    page-break-after: avoid;
+  }
+  /* line 21, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.main {
+    padding-top: 0;
+    overflow: auto;
+  }
+  /* line 25, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.main.scrolled {
+    padding-top: 0;
+  }
+  /* line 28, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.main .full-width:first-child {
+    padding-bottom: 0;
+  }
+  /* line 31, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .row {
+    overflow: auto;
+  }
+  /* line 34, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  section .row .one-third,
+  section .row .one-half,
+  section .row .one-quarter,
+  section .row .three-quarters,
+  section .row .one-fifth {
+    clear: none;
+    float: none;
+  }
+  /* line 43, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  section.full-width:first-of-type {
+    padding-top: 0;
+  }
+  /* line 46, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  section div.preview-grid-module {
+    float: none;
+    display: inline-block;
+    min-height: none;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+  /* line 53, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  section.full-width.notification {
+    background: transparent;
+  }
+  /* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.fixed {
+    position: relative;
+  }
+  /* line 59, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.quicklinks-top,
+  div#CustomLinks {
+    background: transparent;
+  }
+  /* line 63, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .quicklinks-top.scrolled {
+    display: none;
+  }
+  /* line 66, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .one-quarter.preview-grid-module,
+  .one-eighth.preview-grid-module {
+    min-width: auto;
+    overflow: visible;
+    vertical-align: top;
+  }
+  /* line 73, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .preview-grid-module img {
+    max-width: 100%;
+  }
+  /* line 76, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .preview-grid-module a {
+    text-decoration: none;
+  }
+  /* line 79, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .full-width h1 {
+    font-size: 1.2rem;
+  }
+  /* line 84, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  div.small-grid h4 {
+    font-size: 0.75rem;
+  }
+  /* line 87, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .form-horizontal .form-group span,
+  .form-horizontal .form-group div {
+    display: inline-block;
+    padding-left: 0;
+    width: auto;
+  }
+  /* line 96, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .filters li,
+  .filters accordion,
+  .filters h5,
+  .filters form#dirform {
+    display: none;
+  }
+  /* line 102, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_print.scss */
+  .filters li.current {
+    display: inline;
+  }
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+header .title,
+footer .title {
+  width: 64%;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  color: #009;
+  line-height: 78px;
+  font-size: 30px;
+  font-family: 'Gibson Regular', arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 18, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+header .title a,
+footer .title a {
+  text-decoration: none;
+}
+
+/* line 25, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.site-header {
+  color: #FFF;
+  background: #009;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  font-family: 'Gibson Regular', Arial, sans-serif;
+  font-size: 1rem;
+  height: 3.5rem;
+  margin: -3.5rem auto 0;
+  padding-top: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* line 38, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.site-title {
+  font-family: 'Gibson Bold', arial, sans-serif;
+  padding-left: 1rem;
+}
+
+/* line 41, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.site-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 45, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.site-title a:hover {
+  color: #fff;
+}
+
+/* line 54, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+header li,
+header a {
+  color: #A3B8E5;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/* line 58, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+header li:hover,
+header a:hover {
+  color: #FFF;
+}
+
+/* line 64, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+nav ul,
+nav ol {
+  list-style: outside none none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 74, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto 0.5rem;
+  max-width: 1100px;
+}
+
+/* line 80, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.menu-container i {
+  position: inherit;
+  top: 0.125rem;
+}
+
+/* line 84, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.site-title {
+  order: 1;
+  margin-top: 0.65rem;
+}
+
+/* line 88, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+fw-nav {
+  order: 2;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+/* line 93, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.main-nav {
+  margin-top: 0.65rem;
+}
+
+/* line 96, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+fw-header-profile {
+  order: 3;
+}
+
+/* line 99, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 103, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav > li a {
+  padding: 1rem 0.5rem 1rem 0;
+  position: relative;
+}
+
+/* line 107, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav > li {
+  padding: 0 1rem;
+}
+
+/* line 114, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.sub-menu {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
+/* line 119, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav li:hover > .sub-menu {
+  display: block;
+  background: #009;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+  position: absolute;
+  top: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+}
+
+/* line 127, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav .sub-menu li {
+  margin: 0.5rem 0;
+}
+
+/* line 130, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.primary-nav .sub-menu a {
+  margin: 0.75rem 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+/* line 142, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* line 146, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button:hover {
+  color: #0675B1;
+}
+
+/* line 150, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.name-link {
+  align-self: end;
+  background: #FFF;
+  color: #009;
+  display: inline-block;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  width: max-content;
+  border-radius: 4px;
+}
+
+/* line 159, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+a.name-link:hover {
+  color: #978B82;
+}
+
+/* line 162, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-name {
+  float: right;
+  line-height: 2rem;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+/* line 168, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-image-crop {
+  max-width: 2.1rem;
+  max-height: 2rem;
+  margin-left: 0.25rem;
+  overflow: hidden;
+  border-radius: 20px;
+  float: left;
+}
+
+/* line 176, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-image-crop img {
+  width: 2.1rem;
+  height: auto;
+}
+
+/* line 180, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu {
+  background: #EFECEA;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: unset;
+  top: 2.5rem;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+  text-align: right;
+  display: inline-block;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* line 197, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu li {
+  position: relative;
+  display: block;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+/* line 201, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu li:first-of-type {
+  padding-top: 1rem;
+}
+
+/* line 204, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu li:last-of-type {
+  padding-bottom: 1rem;
+}
+
+/* line 208, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu a {
+  color: #009;
+  display: block;
+  width: 100%;
+}
+
+/* line 212, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button-menu a:hover {
+  color: #978B82;
+}
+
+/* line 219, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button:hover a.name-link {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* line 223, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.profile-button:hover .profile-button-menu {
+  max-height: 500px;
+  transition: all 0.5s ease;
+}
+
+/* line 230, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.btn-navbar {
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin: 0.55rem;
+  padding: 0.75rem 1.75rem 0.75rem 3.5rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  top: 0;
+  vertical-align: middle;
+  width: 1rem;
+  z-index: 10;
+}
+
+/* line 246, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.btn-navbar:hover {
+  background-color: #00006A;
+  background-position: 0 -15px;
+  color: #fff;
+}
+
+/* line 251, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.btn-navbar.scroll-active {
+  display: block;
+}
+
+/* line 255, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+.menu-label {
+  margin-top: -3px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+  float: left;
+  left: 8px;
+  position: absolute;
+}
+
+@media (min-width: 1001px) {
+  /* line 267, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_header.scss */
+  header .title {
+    z-index: 0;
+  }
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer.site-footer {
+  background: #009;
+  padding: 2rem 2rem 0 2rem;
+  margin-top: 0;
+  color: #FFF;
+  font-family: 'Gibson Light', arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* line 11, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer.site-footer li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
+/* line 15, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer.site-footer a {
+  color: #A3B8E5;
+  text-decoration: none;
+}
+
+/* line 18, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer.site-footer a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* line 23, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer.site-footer h3 {
+  font-family: 'Gibson Semibold', arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.44444rem;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 34, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer ul {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  display: block;
+}
+
+/* line 40, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+footer p {
+  margin-bottom: 0;
+  color: #6F6F6F;
+}
+
+/* line 44, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+ul.masquerade-links {
+  clear: both;
+  padding-top: 1rem;
+}
+
+/* line 48, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+.footer-column {
+  grid-column-end: span 3;
+}
+
+/* line 51, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+.fuquaLogo {
+  width: 122px;
+  height: 122px;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  border: 0.11111rem solid #FFF;
+}
+
+/* line 66, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+.copyright {
+  background: #00006A;
+  margin: 3rem -2rem -1rem -2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+.copyright span {
+  font-family: 'Gibson Light', arial, sans-serif;
+  font-size: 0.75rem;
+}
+
+/* line 75, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+.copyright .container {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  /* line 81, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+  footer ul {
+    margin: 0 0 2rem 0;
+  }
+  /* line 84, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_footer.scss */
+  footer .right {
+    text-align: left;
+  }
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.home-splash {
+  background: url("../images/splash-large.jpg") center no-repeat #009;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: -7rem;
+  margin-top: -4rem;
+  text-align: center;
+  clear: both;
+  padding: 8rem 1rem;
+}
+
+/* line 15, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.tagline {
+  color: #fff;
+  display: block;
+  font-family: 'Gibson Semibold', arial, sans-serif;
+  font-size: 3.25rem;
+  letter-spacing: 1px;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* line 24, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.home-splash .large-search {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 70%;
+  max-width: 50rem;
+}
+
+@media (max-width: 800px) {
+  /* line 32, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+  .splash-text {
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+  /* line 36, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+  .home-splash {
+    margin-top: 0;
+  }
+}
+
+/* line 43, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.large-search-container {
+  margin: 0 auto;
+  max-width: 50rem;
+  position: relative;
+  width: 70%;
+}
+
+/* line 49, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.large-search-container button {
+  float: right;
+  position: absolute;
+  right: 15%;
+  top: 0;
+  padding: 8px;
+  margin: 7px;
+  width: 5.875rem;
+  text-align: center;
+}
+
+/* line 62, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.quicklinks {
+  background: #00006A;
+  width: 100%;
+  margin: 4rem auto;
+  max-width: 1000px;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.quicklinks a {
+  color: #A3B8E5;
+  grid-column-end: span 1;
+  margin: 0.25rem 0;
+  text-decoration: none;
+}
+
+/* line 76, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.quicklinks a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+/* line 84, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.home-feature-link-boxes div {
+  background: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  padding: 2rem 2rem 1rem 5rem;
+  position: relative;
+}
+
+/* line 90, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.home-feature-link-boxes i {
+  color: #198AC8;
+  font-size: 3rem;
+  position: absolute;
+  left: 0.6rem;
+  top: 1.125rem;
+}
+
+/* line 97, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_template-home.scss */
+.home-feature-link-boxes h2 {
+  margin-top: 0;
+}
+
+/* line 1, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_article.scss */
+.article-header {
+  margin-top: 2rem;
+}
+
+/* line 4, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_article.scss */
+.article-body,
+.article-body a,
+.article-body span,
+.article-body ul,
+.article-body ol,
+.article-body li {
+  font-size: 1.125rem;
+  line-height: 160%;
+  margin: 1rem 0;
+}
+
+/* line 14, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_article.scss */
+.article-footer {
+  border-top: 1px solid #666;
+  font-size: 1rem;
+  color: #555;
+  padding-top: 1rem;
+}
+
+/* line 3, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters table {
+  background: #fff;
+  width: 100%;
+}
+
+/* line 7, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters td {
+  padding: 0;
+}
+
+/* line 10, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters table .ui-chkbox {
+  padding: 0 1rem;
+}
+
+/* line 13, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters li.filter-level-1 table label {
+  padding: 1rem 1rem 1rem 0;
+}
+
+/* line 16, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters li.filter-level-1 table tr:last-of-type {
+  border-bottom: none;
+}
+
+/* line 19, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters table td:first-of-type {
+  width: 48px;
+}
+
+/* line 22, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filters table td:nth-of-type(2n) {
+  width: 187px;
+}
+
+/* line 26, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filter-shortcut .ui-button-icon-only {
+  max-width: 2rem;
+  border: none;
+  border-left: 1px solid #bbb;
+  border-radius: 2px;
+  margin: 0 0 0 0.5rem;
+  background: none transparent;
+  box-shadow: none;
+}
+
+/* line 34, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.filter-shortcut .ui-button-icon-only:hover {
+  background: #ccc;
+}
+
+/* line 38, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-button-icon-only {
+  width: auto;
+  min-width: 2.4rem;
+}
+
+/* line 42, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-button-icon-only .ui-button-text {
+  padding: 0;
+}
+
+/* line 45, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-button-icon-only .ui-icon.fa,
+.ui-button-text-icon-left .ui-icon.fa,
+.ui-button-text-icon-right .ui-icon.fa {
+  margin-top: -10px;
+}
+
+/* line 50, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-chkbox-box.ui-state-default {
+  background: #fff;
+}
+
+/* line 56, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-state-default {
+  background: #ccc;
+  box-shadow: none;
+  font-weight: normal;
+  text-shadow: none;
+  color: inherit;
+}
+
+/* line 64, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.ui-datatable thead th,
+.ui-datatable tbody td,
+.ui-datatable tfoot td,
+.ui-datatable tfoot th {
+  border: none;
+}
+
+/* line 70, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.panel-body ul {
+  margin: 0;
+}
+
+/* line 72, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+.panel-body ul label {
+  margin: 0;
+}
+
+/* line 77, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/_css-hacks.scss */
+a.accordion-toggle {
+  width: 100%;
+}
+
+/* line 32, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-box {
+  background: #ddd;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* line 39, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-box:first-of-type {
+  margin-top: 0;
+}
+
+/* line 43, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 46, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-box .btn {
+  margin-top: 1rem;
+}
+
+/* line 49, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.one-half .gray-box,
+.one-third .gray-box,
+.one-quarter .gray-box {
+  padding: 1rem;
+}
+
+/* line 55, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.red-box {
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+/* line 61, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.set-box-height .gray-box {
+  min-height: 10.875rem;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  /* line 68, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .one-quarter.gray-box {
+    width: 22%;
+  }
+  /* line 71, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .one-half.gray-box {
+    width: 47%;
+  }
+  /* line 74, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .one-quarter.gray-box,
+  .one-third.gray-box,
+  .one-half.gray-box,
+  .two-thirds.gray-box,
+  .three-quarters.gray-box {
+    margin: 0 1.5%;
+  }
+  /* line 80, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .one-quarter.gray-box.offset-one-quarter,
+  .one-third.gray-box.offset-one-quarter,
+  .one-half.gray-box.offset-one-quarter,
+  .two-thirds.gray-box.offset-one-quarter,
+  .three-quarters.gray-box.offset-one-quarter {
+    margin-left: 26.5%;
+  }
+}
+
+/* line 88, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-bar {
+  background: #eee;
+  min-height: 2.5rem;
+  padding: 0.25rem 1rem;
+}
+
+/* line 94, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.gray-bar-secondary {
+  background: #f4f4f4;
+  margin-top: -1rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+@media (max-width: 767px) {
+  /* line 101, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .gray-bar li.pull-right {
+    display: block;
+    float: none;
+  }
+}
+
+/* line 109, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group {
+  margin-bottom: 1rem;
+}
+
+/* line 112, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group h1:first-of-type, .summary-group h2:first-of-type, .summary-group h3:first-of-type, .summary-group h4:first-of-type, .summary-group h5:first-of-type {
+  margin-bottom: 0;
+}
+
+/* line 116, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group p {
+  margin: 0;
+}
+
+/* line 120, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group-header {
+  margin-bottom: 0.5rem;
+}
+
+/* line 123, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group-header .subtitle {
+  font-size: 1rem;
+  display: block;
+}
+
+/* line 127, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group h4 {
+  font-family: 'Gibson Bold', arial, sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* line 132, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.one-half.summary-group {
+  margin-bottom: 2rem;
+}
+
+/* line 135, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group ul {
+  margin-top: 0;
+}
+
+/* line 138, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group li {
+  margin: 0.25rem 0 0 0;
+}
+
+/* line 141, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group .form-group {
+  margin: 0.25rem 0;
+}
+
+/* line 143, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group .form-group:first-of-type {
+  margin-top: 1rem;
+}
+
+/* line 147, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.summary-group label {
+  margin-bottom: 0;
+}
+
+/* line 150, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module .summary-group {
+  margin-bottom: 0.5rem;
+}
+
+/* line 157, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters a {
+  text-decoration: none;
+}
+
+/* line 160, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* line 164, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters > ul {
+  border-top: 1px solid #ddd;
+}
+
+/* line 167, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* line 174, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters input {
+  margin-right: 0.25rem;
+}
+
+/* line 177, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters:last-child {
+  margin-bottom: 0;
+}
+
+/* line 181, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters span.glyphicon {
+  margin-top: -1rem;
+  padding: 1rem;
+  top: 1.125rem;
+  right: 0;
+}
+
+/* line 187, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 {
+  background: #f8f8f8;
+}
+
+/* line 190, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 label,
+.filter-level-1 .panel-title,
+.panel-collapse label {
+  margin-bottom: 0;
+  padding: 1rem 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+/* line 197, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* line 200, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 h4 a {
+  color: #000;
+}
+
+/* line 204, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.panel-heading {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 207, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.has-children {
+  padding: 0;
+  position: relative;
+}
+
+/* line 211, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 li {
+  background-color: #fff;
+}
+
+/* line 213, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-level-1 li:last-of-type {
+  border-bottom: none;
+}
+
+/* line 217, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.list-group-item {
+  padding-left: 1rem;
+}
+
+/* line 220, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.list-group-item [type="checkbox"],
+.list-group-item [type="radio"] {
+  position: absolute;
+  left: 0.5rem;
+  margin-top: 2px;
+}
+
+/* line 227, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-shortcut-container {
+  padding-left: 0;
+}
+
+/* line 230, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-shortcut {
+  background: #ddd;
+  min-height: 1.75rem;
+  padding: 0 0 0 0.75rem;
+  margin: 0 0.5rem 1rem 0;
+  line-height: 140%;
+  font-weight: normal;
+  font-family: 'Gibson Bold', arial, sans-serif;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+/* line 241, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-shortcut button {
+  min-width: 2rem;
+  min-height: 28px;
+  border: none;
+  border-left: 1px solid #bbb;
+  border-radius: 2px;
+  margin: 0 0 0 0.5rem;
+  padding: 0.2rem;
+  background: none transparent;
+  box-shadow: none;
+  font-size: 1.125rem;
+}
+
+/* line 252, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-shortcut button:hover {
+  background: #ccc;
+}
+
+/* line 256, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filter-shortcut .close-x {
+  padding: 0 1rem 0 0.15rem;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 261, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.panel-title {
+  width: 100%;
+}
+
+/* line 264, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+a.accordion-toggle {
+  width: 100%;
+  float: left;
+}
+
+/* line 267, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+a.accordion-toggle:after {
+  content: ' \25BE';
+  float: right;
+  margin-right: 1rem;
+}
+
+/* line 273, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.filters .underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 851px) {
+  /* line 281, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .quicklinks-top.scrolled .right {
+    right: 6rem;
+    position: fixed;
+  }
+}
+
+@media (min-width: 1306px) {
+  /* line 288, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .quicklinks-top.scrolled .right {
+    right: 1rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 295, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .main.scrolled {
+    padding-top: 5.35rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* line 302, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .main {
+    padding-top: 5.35rem;
+  }
+  /* line 305, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .search-container {
+    max-width: 17rem;
+    left: -1.5rem;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 451px) {
+  /* line 314, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .quicklinks-top .right {
+    right: 0;
+  }
+  /* line 317, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .quicklinks-top.scrolled .right {
+    right: -3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 322, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .main,
+  .main.scrolled {
+    padding-top: 7.9rem;
+  }
+  /* line 326, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-image-crop {
+    float: left;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+  /* line 332, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .btn-navbar {
+    margin-top: 3.125rem;
+  }
+  /* line 335, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .search-container {
+    max-width: 15rem;
+    left: 0;
+  }
+}
+
+/* line 344, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-container {
+  width: 18rem;
+  height: 1.875rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 450px) {
+  /* line 354, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .search-container {
+    float: right;
+    right: 0;
+    position: relative;
+  }
+}
+
+/* line 361, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+::-webkit-input-placeholder {
+  color: #999;
+  text-align: center;
+  font-family: 'Gibson Regular', arial, sans-serif;
+}
+
+/* line 366, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+:-moz-placeholder {
+  color: #999;
+  text-align: center;
+  font-family: 'Gibson Regular', arial, sans-serif;
+}
+
+/* line 371, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+::-moz-placeholder {
+  color: #999;
+  text-align: center;
+  font-family: 'Gibson Regular', arial, sans-serif;
+}
+
+/* line 376, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+:-ms-input-placeholder {
+  color: #999;
+  text-align: center;
+  font-family: 'Gibson Regular', arial, sans-serif;
+}
+
+/* line 384, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login {
+  padding-top: 0;
+}
+
+/* line 387, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login .btn {
+  display: block;
+  float: left;
+  clear: both;
+  width: 5.35rem;
+  margin-bottom: 1rem;
+}
+
+/* line 394, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login p {
+  clear: both;
+}
+
+/* line 400, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs {
+  width: calc(100% + 2rem);
+  margin: 0 0 2rem -1rem;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* line 407, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs h1,
+.login-tabs h2,
+.login-tabs h3,
+.login-tabs h4,
+.login-tabs h5,
+.login-tabs h6 {
+  margin: 0;
+}
+
+/* line 415, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs li {
+  padding: 0;
+}
+
+/* line 418, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs button {
+  background: #eee;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  border: none;
+  color: #009;
+}
+
+/* line 426, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs button:hover {
+  color: #3E5BC3;
+}
+
+/* line 430, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs .current-page-item button {
+  background: #ddd;
+  color: #000;
+}
+
+/* line 433, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.login-tabs .current-page-item button:hover {
+  color: #000;
+}
+
+/* line 440, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.inline {
+  max-width: 400px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 18.75%;
+  line-height: 160%;
+}
+
+/* line 450, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.fixed-bottom {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+}
+
+/* line 457, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.masquerade {
+  background: orange;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* line 463, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.masquerade span {
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+/* line 467, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.masquerade .btn {
+  margin: 0;
+  background: #EFECEA;
+}
+
+/* line 470, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.masquerade .btn:hover {
+  background: #978B82;
+}
+
+/* line 477, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-box {
+  background: #eee;
+  padding: 1rem 9rem 1rem 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 483, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-box input[type="text"] {
+  width: 100%;
+}
+
+/* line 486, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-box p {
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* line 491, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-box button {
+  width: 6.25rem;
+  right: 0.875rem;
+  top: 1rem;
+  font-size: 0.9rem;
+  position: absolute;
+}
+
+/* line 498, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.results-total {
+  bottom: -7px;
+  color: #444;
+  position: relative;
+}
+
+/* line 503, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-option-container {
+  float: right;
+  margin-right: -8rem;
+  margin-top: 1rem;
+}
+
+/* line 508, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-option-container label {
+  color: #888;
+  padding-right: 0.2rem;
+}
+
+/* line 512, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search-option-container select {
+  background: #f3f3f3;
+  color: #888;
+}
+
+@media (max-width: 450px) {
+  /* line 518, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .search-option-container {
+    margin-left: 0.5rem;
+    float: left;
+    clear: both;
+  }
+}
+
+/* line 528, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection li {
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 531, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection li:first-of-type {
+  border-top: 1px solid #ddd;
+}
+
+/* line 535, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection ul {
+  margin-top: 0;
+}
+
+/* line 538, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection a {
+  color: #000;
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 543, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection a:hover {
+  background: #eee;
+}
+
+/* line 547, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.program-selection .current,
+.program-selection .current a:hover {
+  background: #ddd;
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+/* line 555, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: 'Gibson Regular', Arial, sans-serif;
+  text-align: left;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 562, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module:first-of-type {
+  margin-top: 0;
+}
+
+/* line 565, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 569, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module h4 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.5rem;
+  clear: none;
+}
+
+/* line 573, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module h4:first-of-type {
+  margin-top: 0;
+}
+
+/* line 577, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module span {
+  line-height: 140%;
+  display: block;
+}
+
+/* line 580, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-module span.glyphicon {
+  display: inline;
+}
+
+/* line 584, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-image {
+  max-width: 7.875rem;
+  max-height: 10rem;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 420px) {
+  /* line 592, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .preview-image {
+    margin-right: 100%;
+  }
+}
+
+/* line 599, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-grid-module {
+  width: 25%;
+  min-width: 200px;
+  min-height: 260px;
+  margin: 1rem 0 0 0;
+  clear: none;
+  position: relative;
+}
+
+/* line 607, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-grid-module .profile-image {
+  margin-bottom: 0.5rem;
+}
+
+/* line 610, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-grid-module h4 {
+  margin: 0;
+}
+
+/* line 613, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-grid-module ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 618, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.preview-grid-module > span {
+  display: block;
+}
+
+/* line 621, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.email {
+  word-wrap: break-word;
+}
+
+@media (max-width: 510px) {
+  /* line 625, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .preview-grid-module {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+  /* line 630, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .preview-grid-module h4 {
+    clear: none;
+  }
+}
+
+/* line 637, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.grid-detailed-info .preview-grid-module {
+  min-height: 40rem;
+}
+
+/* line 643, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid .preview-grid-module {
+  width: 12.5%;
+  min-height: 250px;
+  min-width: 100px;
+}
+
+/* line 648, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid .profile-image {
+  max-height: 6rem;
+}
+
+/* line 651, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid h4 {
+  font-size: 1rem;
+}
+
+/* line 654, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid-details {
+  font-size: 0.65rem;
+}
+
+/* line 657, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid .no-details {
+  min-height: 162px;
+}
+
+/* line 663, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.blocked {
+  background-color: rgba(255, 0, 0, 0.66);
+  top: 7.5rem;
+  left: 1rem;
+  color: white;
+  line-height: 1rem;
+  padding: 0.25rem;
+  width: 7.75rem;
+  position: absolute;
+}
+
+/* line 673, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.blocked i {
+  float: left;
+  font-size: 1.75rem;
+  margin: 0.1rem 0.35rem 0 0.2rem;
+}
+
+/* line 678, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid .blocked {
+  background-color: rgba(255, 0, 0, 0.66);
+  color: white;
+  font-size: 0.6rem;
+  line-height: 105%;
+  top: 4.1875rem;
+  padding: 0.25rem;
+  width: 4.625rem;
+}
+
+/* line 687, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.small-grid .blocked i {
+  float: left;
+  font-size: 1rem;
+  margin: 0.1rem 0.35rem 0 0.2rem;
+}
+
+/* line 692, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+table .blocked {
+  width: auto;
+  top: inherit;
+  left: 0;
+  margin: 0;
+  padding: 0 0.25rem;
+  display: block;
+  line-height: inherit;
+  position: relative;
+}
+
+/* line 702, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+table .blocked i {
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+/* line 706, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.blocked.roster-photos-large {
+  width: 9.75rem;
+  top: 10rem;
+}
+
+/* line 710, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.blocked.roster-photos-small {
+  top: 4.25rem;
+  width: 4.625rem;
+}
+
+/* line 721, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination-controls {
+  margin: 1rem 0;
+  padding: 1rem;
+  position: relative;
+}
+
+/* line 726, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+
+/* line 732, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination li {
+  margin-right: 1rem;
+  display: inline;
+}
+
+/* line 736, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination .disabled {
+  opacity: 0.33;
+}
+
+/* line 738, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination .disabled a {
+  cursor: default;
+  color: #999;
+}
+
+/* line 741, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination .disabled a:hover {
+  color: #999;
+}
+
+/* line 746, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.pagination .current a,
+.pagination .active a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 751, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.show-all-toggle {
+  text-decoration: underline;
+}
+
+/* line 756, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-image,
+.sidebar-results .preview-grid-module img {
+  max-height: 10rem;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+/* line 762, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-image {
+  margin-right: 1rem;
+}
+
+/* line 765, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-title {
+  font-size: 1.25rem;
+}
+
+/* line 768, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-area {
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+/* line 771, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* line 775, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section:last-of-type {
+  border-bottom: none;
+}
+
+/* line 779, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section h2 {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* line 789, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section label {
+  display: block;
+}
+
+/* line 792, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section span {
+  padding-left: 0;
+}
+
+/* line 795, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section .hide-info {
+  font-family: 'Gibson Regular', arial, sans-serif;
+  float: right;
+}
+
+/* line 801, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-hidden span {
+  background: #ddd none repeat scroll 0 0;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  padding-top: 7px;
+  padding-right: 9rem;
+  padding-left: 7px;
+  opacity: 0.5;
+  padding-bottom: 7px;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+/* line 815, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-hidden span:after {
+  content: "hidden from students";
+  float: right;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+
+/* line 824, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-image-hidden {
+  float: left;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 828, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-image-hidden:after {
+  content: "hidden from students";
+  background: #ddd none repeat scroll 0 0;
+  max-width: 7rem;
+  padding: 0.2rem;
+  position: absolute;
+  left: 6px;
+  bottom: 39px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  opacity: 0.9;
+  color: #666;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 845, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section .form-group:last-of-type,
+.profile-section .form-group:last-of-type span:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 849, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section .form-group span.three-quarters {
+  margin-left: 20%;
+}
+
+/* line 851, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-section .form-group span.three-quarters:first-of-type {
+  margin-left: 0;
+}
+
+/* line 856, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 860, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header h1 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  clear: none;
+}
+
+/* line 865, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header-image {
+  float: left;
+}
+
+/* line 868, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-image-caption {
+  top: -0.7rem;
+  color: #777;
+  font-size: 0.75rem;
+  display: block;
+  position: relative;
+  clear: both;
+}
+
+/* line 876, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header > span {
+  margin-top: 0.5rem;
+  display: block;
+  line-height: inherit;
+}
+
+/* line 881, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header > span:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* line 884, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.profile-header span.display-inline {
+  margin-right: -0.75rem;
+  display: inline;
+}
+
+/* line 889, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+section.directory-profile {
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 894, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-section .hide-info {
+    margin-top: 0.5rem;
+    float: none;
+    display: block;
+  }
+  /* line 899, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-section .offset-one-fifth {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+  /* line 902, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-body .profile-section {
+    border-bottom: 1px solid #ddd;
+  }
+  /* line 905, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-body .one-half {
+    margin-top: 0;
+  }
+  /* line 908, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-body .one-half:last-of-type .profile-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 915, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .profile-image {
+    margin-right: 100%;
+  }
+  /* line 918, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  div.full-width.profile-header {
+    padding-bottom: 1rem;
+  }
+}
+
+/* line 925, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.details-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 929, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.course-details-list {
+  margin-bottom: 4rem;
+}
+
+/* line 932, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.course-details-list li {
+  line-height: 2rem;
+  position: relative;
+  clear: both;
+}
+
+/* line 937, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.details {
+  margin-top: 0;
+}
+
+/* line 940, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.details h5 {
+  margin: 1rem 0 0.5rem 0;
+  font-family: 'Gibson Bold', arial, sans-serif;
+}
+
+/* line 943, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.details h5:first-of-type {
+  margin-top: 0;
+}
+
+/* line 947, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.details ul.details-list,
+.details p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 952, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.course-details-list label {
+  float: left;
+  clear: left;
+}
+
+/* line 956, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.course-details-list span {
+  left: 14rem;
+  display: inline;
+  float: left;
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  /* line 964, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+  .course-details-list label,
+  .course-details-list span {
+    left: inherit;
+    float: none;
+    display: block;
+    clear: none;
+    position: relative;
+  }
+}
+
+/* line 976, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.search article {
+  margin: 1rem 0;
+}
+
+/* line 991, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.team-room-box {
+  background: #7bb77b;
+  color: #004400;
+  padding: 11px 0;
+  text-align: center;
+  border-right: 3px solid #fff;
+}
+
+/* line 998, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.team-room-key-box {
+  display: inline-block;
+  background: #7bb77b;
+  color: #004400;
+  padding: 11px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+/* line 1007, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.occupied {
+  background: red;
+  color: #fff;
+}
+
+/* line 1011, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.team-room-box.reserved {
+  padding: 3px 0;
+}
+
+/* line 1014, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.team-room-box:before {
+  content: '';
+  background: #fff;
+  float: left;
+  margin-top: -30px;
+  color: #fff;
+  font-size: 88%;
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 1025, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.reserved:before {
+  content: 'RES';
+  float: left;
+  margin-top: -3px;
+  background: red;
+  color: #fff;
+  width: 100%;
+  height: 19px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 1038, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 1044, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1054, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  top: 1px;
+  overflow: hidden;
+}
+
+/* line 1063, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.caret {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px dashed;
+  display: inline-block;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  width: 0;
+}
+
+/* line 1074, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.collapse {
+  display: none;
+}
+
+/* line 1077, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.collapse.in {
+  display: block;
+}
+
+/* line 1080, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+tr.collapse.in {
+  display: table-row;
+}
+
+/* line 1083, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+/* line 1086, /Users/jake/Fuqua Working/fuquaworld 2020/css/scss/fuquaworld.scss */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/*# sourceMappingURL=../fuquaworld.map */

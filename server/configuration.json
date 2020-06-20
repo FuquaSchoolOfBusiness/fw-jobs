@@ -1,0 +1,39 @@
+{
+  "skills": [
+    "Budgeting",
+    "Data Manipulation",
+    "Data Visualization",
+    "Digital Marketing",
+    "Entrepreneurship",
+    "Grant-Writing",
+    "Graphic Design",
+    "Machine Learning",
+    "Mandarin",
+    "Research",
+    "SQL",
+    "UX"
+  ],
+  "list_intro": "<header class=\"style-scope fw-jobs\"><header class=\"style-scope fw-jobs\"><h1 class=\"style-scope fw-jobs\" data-swiftype-name=\"title\" data-swiftype-type=\"string\">FVC Project Portal<\/h1><hr class=\"style-scope fw-jobs\"><\/header><p class=\"style-scope fw-jobs\">To view and apply for available volunteer positions, please see the links below. Please review the job description, requirements, and timeframe to determine if an opportunity matches your skillset and interest. It is expected that FVC Members selecting a project are committed to the successful completion of the project during the desired timeframe. In the case that you are unable to serve to the end of the designated timeframe, we ask that you give the Sponsor a minimum of 2-weeks notice and, if possible, train a replacement FVC Member.<\/p><p class=\"style-scope fw-jobs\">Graduates on an F1 visa must have their EAD card prior to starting an OPT-qualified volunteer opportunity.<br class=\"style-scope fw-jobs\"><br class=\"style-scope fw-jobs\">Navigation Notes:<\/p><ol><li class=\"style-scope fw-jobs\"><em class=\"style-scope fw-jobs\">Priority Due<\/em> indicates the date on which priority applications submitted by international students facing visa constraints will be reviewed and submitted to the Sponsor. After this date, all FVC Members are eligible to apply.<\/li><li class=\"style-scope fw-jobs\">While <em class=\"style-scope fw-jobs\">Program Alignment<\/em> indicates the programs that are likely aligned with each opportunity, most positions are available to all volunteers if you have the skillset to be successful.&nbsp;<\/li><li class=\"style-scope fw-jobs\">Required Skills are explicitly necessary for some roles. When this is the case, the <em class=\"style-scope fw-jobs\">Required Skill<\/em> is shown.<\/li><li class=\"style-scope fw-jobs\">Filters use &quot;AND&quot; logic. For instance, if you select &quot;None Specified&quot; and &quot;Machine Learning&quot; under the <em class=\"style-scope fw-jobs\">Required Skills Filter<\/em>, you will see projects with no explicit skill requirement and projects that require machine learning.<\/li><li class=\"style-scope fw-jobs\">In order to filter on a date field (for instance, to see all opportunities that start after a certain date), hit the <em>Add Filter<\/em> button under <em>Time Based Filters<\/em>.<\/li><li class=\"style-scope fw-jobs\">Expanding a project will show the full project detail and application requirements.<\/li><li class=\"style-scope fw-jobs\">&nbsp;A blank&nbsp;<em>Latest Start Date<\/em> implies the project will be listed until filled.&nbsp;<\/li><\/ol><p class=\"style-scope fw-jobs\">If you have any questions, please email <a class=\"style-scope fw-jobs\" href=\"mailto:FuquaVolunteers@duke.edu?subject=FVC Student Inquiry\">FuquaVolunteers@duke.edu<\/a>.<\/p><\/header>",
+  "_rev": "45-DDDDDD28d8dd60c0045e939573be5e60c",
+  "modified": "2020-06-03T22:52:34.268Z",
+  "field_selectors": [
+    "Earliest Start Date",
+    "Expected Duration",
+    "Latest Start Date",
+    "Organization",
+    "Overview",
+    "Priority Due Date",
+    "Skills"
+  ],
+  "_id": "student_jobs_2020",
+  "programs": [
+    "MBA",
+    "MMS",
+    "MQM"
+  ],
+  "admins": [
+    "conder",
+    "jxm31",
+    "ca102"
+  ]
+}

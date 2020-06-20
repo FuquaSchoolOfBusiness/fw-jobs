@@ -1,0 +1,56 @@
+
+The back-end architecture of the system consists of the following:
+==================================================================
+
+1) A CouchDB database using IBM's Cloudant service (Cloudant is a CouchDB implementation)
+A common NoSQL solution, Cloudant's version of CouchDB has a nice array of SDKs to make leveraging the
+system simple. The backend can be replaced with any storage solution just bear in mind the application
+expects exchanges of JSON data.
+
+2) A Java JAX-WS class (JobPostings.java) with several endpoints that proxy these services to the application.  
+These web service endpoints are protected requiring a valid JWT passed along as a Cookie or optionally as an
+Authorization header as a bearer token.
+    I) End-Point "GET /rest/jobs/configuration": this endpoint retrieves the configuration JSON document for the
+    application.
+    II) End-Point "GET /rest/jobs/postings": this endpoint aggregates all of the job postings and returns them
+    as a JSON Array.  The back end is storing each job posting as a separate JSON document.
+    III) End-Point "POST /rest/jobs/postings": this endpoint expects a JSON document to be posted and stores
+    it. This end-point handles both saving changes to the configuration JSON document and any 
+    job posting JSON document.  After it saves the changes to storage, it then returns an empty JSON document
+    (not sure why I did that-- but that's what it does)
+    IV) End-Point "DELETE /rest/jobs/postings": this endpoint expects a JSON document of the job posting to
+    delete upon which it removes said document from storage and then returns an empty JSON document (not sure
+    why I did that-- but that's what it does)
+
+3) An authorization verification endpoint (validate.java) that returns data about the user to the application.  
+This endpoint is also protected.  If the user is not authenticated properly this endpoint returns a 401 HTTP 
+response and the front-end fw-auth component redirects the user to a login page.
+    I) End-Point "GET /auth/validate"
+
+
+
+The user work-flow is this:
+==================================================================
+
+1) The user accesses the application URL (https://go.fuqua.duke.edu/apps/fvc/index.html).
+2) The front-end calls the authorization verification endpoint.  If the endpoint returns a 401, then
+the front-end will initiate a login by redirecting the browser to an authorization URL which will 
+redirect the user back to the application after a successful login.  Otherwise, the endpoint will return 
+the information needed to identify the user and any other data needed for permissioning in the 
+application.
+    *** A WARNING ******************************************************************
+    * At the very least, the POST and DELETE end-points for job postings should be 
+    * authenticated and permissioned on the back-end to match the permissions granted 
+    * on the front-end.   NEVER rely on the front-end for permissions to modify the 
+    * back-end.   The permissions on the front-end are to provide the correct interface
+    * features, but the client side can be compromised so ensure that the backend is 
+    * secure as appropriate.
+    ********************************************************************************
+3) The front-end calls the configuration endpoint and then calls the job postings 
+endpoint and renders the interface showing administrative features IF the user identity
+(as retrieved from the authorization verification endpoint) is present in the list
+of administrators.
+4) If the user is an administrator, the save and delete endpoints are used.
+
+
+

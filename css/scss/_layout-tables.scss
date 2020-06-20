@@ -1,0 +1,125 @@
+// Tables /////////////////////////////////////////////
+
+table {
+  font-size: 0.9rem;
+}
+table td {
+  padding: 1rem 0.5rem;
+}
+table th {
+  padding: 0.5rem 0.2rem;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+thead {
+  font-family: 'Gibson Bold', arial, sans-serif;
+  line-height: 120%;
+}
+th {
+  font-weight: normal;
+}
+.table-follow {
+  padding: 1rem;
+  position: relative;
+}
+
+[ng-click*=".sort"] {
+  cursor: pointer;
+}
+
+// Responsive Tables
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media screen and (max-width: 940px) {
+
+	table.responsive,
+  table.responsive thead,
+  table.responsive tbody,
+  table.responsive th,
+  table.responsive td,
+  table.responsive tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.responsive thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	table.responsive tr {
+    border: 1px solid #ccc;
+  }
+
+	table.responsive td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 35%;
+    text-align: left;
+	}
+  table.responsive.course-evaluation td {
+    padding-left: 55%;
+  }
+
+	table.responsive td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 16px;
+		left: 6px;
+		width: 30%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/* Label the data */
+  table.responsive {
+  	td:nth-of-type(1):before { content: "Course"; }
+  	td:nth-of-type(2):before { content: "Instructor"; }
+  	td:nth-of-type(3):before { content: "Time"; }
+  	td:nth-of-type(4):before { content: "Room"; }
+  	td:nth-of-type(5):before { content: "Seats"; }
+  }
+  table.responsive.course-evaluation {
+  	td:nth-of-type(1):before { content: "Term & Program"; }
+  	td:nth-of-type(2):before { content: "Course Number"; }
+  	td:nth-of-type(3):before { content: "Title & Instructor"; }
+  	td:nth-of-type(4):before { content: "Course Avg & SD"; }
+  	td:nth-of-type(5):before { content: "Instructor Avg & SD"; }
+  	td:nth-of-type(6):before { content: "Overall Avg & SD"; }
+  	td:nth-of-type(7):before { content: "Hours Prep Avg & SD"; }
+  	td:nth-of-type(8):before { content: "Number Responses"; }
+  }
+  table.responsive.roster-basic {
+  	td:nth-of-type(1):before { content: "Name"; }
+  	td:nth-of-type(2):before { content: "Class & Year"; }
+  	td:nth-of-type(3):before { content: "Grad Year"; }
+  	td:nth-of-type(4):before { content: "Email"; }
+  }
+  table.responsive.course-archive {
+  	td:nth-of-type(1):before { content: "Course"; }
+  	td:nth-of-type(2):before { content: "Instructor"; }
+  	td:nth-of-type(3):before { content: "Start Date"; }
+  	td:nth-of-type(4):before { content: "Roster"; }
+  	td:nth-of-type(5):before { content: "Evaluation"; }
+  }
+  table.responsive.email-list-view {
+  	td:nth-of-type(1):before { content: "Name"; }
+  	td:nth-of-type(2):before { content: "Address"; }
+  	td:nth-of-type(3):before { content: "Restrictions"; }
+  	td:nth-of-type(4):before { content: "List Contact"; }
+  	td:nth-of-type(5):before { content: "Size"; }
+  }
+}
+
+.roster th {
+  text-align: left;
+}
