@@ -23,8 +23,6 @@ Admin view: https://go.fuqua.duke.edu/apps/fvcdemo/admin.html
 Module attributes:
  role - "admin" or "user", defaults to "user"
 
-<fw-jobs></fw-jobs>
-```
 
 ## Screen Shot
 ![Screen Shot of Application](./screen_shot.png?inline=true)
