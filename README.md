@@ -23,17 +23,6 @@ Admin view: https://go.fuqua.duke.edu/apps/fvcdemo/admin.html
 Module attributes:
  role - "admin" or "user", defaults to "user"
 
-## Installation
-```bash
-npm i @fuquaschoolofbusiness/fw-jobs
-```
-
-## Usage
-```html
-<script type="module">
-  import '@fuquaschoolofbusiness/fw-jobs/dist/fw-jobs.js';
-</script>
-
 <fw-jobs></fw-jobs>
 ```
 
