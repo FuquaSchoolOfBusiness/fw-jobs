@@ -141,10 +141,12 @@ with the filenames in the polyfills folder):
         </body>
     </html>
 
+This component uses the (https://froala.com/wysiwyg-editor/ "Froala") rich text editor.   You will need to get a production license
+to leverage this component (and place the license key into the component code).  
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would 
 like to change.
 
-Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
