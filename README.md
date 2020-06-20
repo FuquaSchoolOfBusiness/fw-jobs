@@ -126,6 +126,31 @@ Edit the index.html  as follows:
 
 If you want to allow compatibility with older browsers and browsers that do not
 fully support ES6, use the pollyfills to pull in the script by replacing the module
-script tag with:
+script tag as follows (please make sure the filenames in the script tag match up
+with the filenames in the polyfills folder):
 
+    <html>
+        <head>
+            <title>Project Opportunities</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="css/fvc.css">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!-- Froala -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="froala_editor_3.1.1/css/froala_editor.pkgd.min.css"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+            <script type="text/javascript" src="froala_editor_3.1.1/js/froala_editor.pkgd.min.js"></script>
+            <!-- End Froala -->         
+        </head>
+        <body>
+            <fw-jobs role="user"></fw-jobs>
+            <script>window.importShim=t=>import(t.startsWith(".")?new URL(t,document.baseURI):t);</script>
+            <script>!function(){function e(e,o){return new Promise((function(t,n){document.head.appendChild(Object.assign(document.createElement("script"),{src:e,onload:t,onerror:n},o?{type:"module"}:void 0))}))}var o=[];function t(){window.importShim("./dist/fw-jobs.js")}"noModule"in HTMLScriptElement.prototype&&!("importShim"in window)&&o.push(e("./dist/polyfills/dynamic-import.991be47e17117abb5eb15f5254ad3869.js",!1)),(!("attachShadow"in Element.prototype)||!("getRootNode"in Element.prototype)||window.ShadyDOM&&window.ShadyDOM.force)&&o.push(e("./dist/polyfills/webcomponents.6954abecfe8b165751e6bc9b0af6c639.js",!1)),!("noModule"in HTMLScriptElement.prototype)&&"getRootNode"in Element.prototype&&o.push(e("./dist/polyfills/custom-elements-es5-adapter.84b300ee818dce8b351c7cc7c100bcf7.js",!1)),o.length?Promise.all(o).then(t):t()}();</script>
+        </body>
+    </html>
 
