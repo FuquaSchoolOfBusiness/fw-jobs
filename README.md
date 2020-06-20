@@ -99,32 +99,29 @@ do the npm install the first time)
 
 5) edit the index.html  as follows:
 
-<html>
-    <head>
-        <title>Project Opportunities</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/fvc.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Froala -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="froala_editor_3.1.1/css/froala_editor.pkgd.min.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-        <script type="text/javascript" src="froala_editor_3.1.1/js/froala_editor.pkgd.min.js"></script>
-        <!-- End Froala -->        
-        <style>
-            body { margin: 0px; }
-        </style> 
-    </head>
-    <body>
-        <fw-jobs role="user"></fw-jobs>
-        <script type="module" src="./dist/fw-jobs.js"></script>
-    </body>
-</html>
+    <html>
+        <head>
+            <title>Project Opportunities</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="css/fvc.css">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!-- Froala -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="froala_editor_3.1.1/css/froala_editor.pkgd.min.css"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+            <script type="text/javascript" src="froala_editor_3.1.1/js/froala_editor.pkgd.min.js"></script>
+            <!-- End Froala -->         
+        </head>
+        <body>
+            <fw-jobs role="user"></fw-jobs>
+            <script type="module" src="./dist/fw-jobs.js"></script>
+        </body>
+    </html>
 
 If you want to allow compatibility with older browsers and browsers that do not
 fully support ES6, use the pollyfills to pull in the script by replacing the module
